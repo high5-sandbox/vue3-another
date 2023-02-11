@@ -10,7 +10,7 @@ v-container
 
       v-col.mb-4
         h1.display-2.font-weight-bold.mb-3
-          | Welcome to Vuetify 3 Beta
+          | ようこそ日本へ
 
         h4 Vite Preview
 
