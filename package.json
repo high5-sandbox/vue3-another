@@ -13,10 +13,12 @@
     "prepare": "git config core.hooksPath git_hooks"
   },
   "dependencies": {
+    "@gtm-support/vue-gtm": "^2.0.0",
     "@mdi/font": "5.9.55",
     "axios": "^0.27.2",
     "roboto-fontface": "*",
     "vue": "^3.2.25",
+    "vue-gtag": "^2.0.1",
     "vue-router": "^4.1.1",
     "vuetify": "^3.0.0-beta.0",
     "vuex": "^4.0.2",
