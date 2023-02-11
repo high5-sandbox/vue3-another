@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "Running pre-push hook..."
+
+npm run fix
+
+RESULT=$?
+[ $RESULT -ne 0 ] && exit 1
