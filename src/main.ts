@@ -2,8 +2,13 @@ import { createApp } from 'vue'
 import App from './app.vue'
 import vuetify from './plugins/vuetify'
 import { loadFonts } from './plugins/webfontloader'
-import router from "./router";  
+import router from "./router";
+import { createGtm } from "@gtm-support/vue-gtm";
 
 loadFonts()
 
-createApp(App).use(vuetify).use(router).mount('#app')
+createApp(App).use(vuetify).use(router).use(
+  createGtm({
+    id: 'GTM-5QT89VX', // Your GTM single container ID
+  })
+).mount('#app')
