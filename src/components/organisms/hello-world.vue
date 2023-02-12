@@ -10,7 +10,7 @@ v-container
 
       v-col.mb-4
         h1.display-2.font-weight-bold.mb-3
-          | ようこそ日本へ
+          | ようこそアメリカへ
 
         h4 Vite Preview
 
