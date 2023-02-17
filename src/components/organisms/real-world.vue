@@ -118,8 +118,8 @@ export default defineComponent({
         console.log('gtm enabled');
         window.dataLayer?.push({
           event: "login",
-          userId: 213355,
-          groupId: 18233,
+          userId: 888,
+          groupId: 777,
           // further parameters
         });
       }
