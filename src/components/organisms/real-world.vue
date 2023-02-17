@@ -119,6 +119,7 @@ export default defineComponent({
         window.dataLayer?.push({
           event: "login",
           userId: 133222,
+          groupId: 182,
           // further parameters
         });
       }
