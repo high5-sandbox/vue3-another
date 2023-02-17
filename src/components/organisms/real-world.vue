@@ -1,5 +1,9 @@
 <template lang="pug">
 v-container
+  v-btn(
+    @click="login"
+  )
+    | ログイン
   v-row.text-center
     v-col(cols="12")
       v-img.my-3(
@@ -57,6 +61,7 @@ export default defineComponent({
 
   data() {
     return {
+      count: 0,
       ecosystem: [
         {
           text: 'vuetify-loader',
@@ -106,5 +111,21 @@ export default defineComponent({
       ],
     }
   },
+
+  methods: {
+    login() {
+      if (this.$gtm.enabled()) {
+        console.log('gtm enabled');
+        window.dataLayer?.push({
+          event: "login",
+          userId: 133222,
+          // further parameters
+        });
+      }
+      console.log('login');
+    }
+  },
+
+
 })
 </script>
