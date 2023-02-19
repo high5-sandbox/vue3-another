@@ -9,6 +9,6 @@ loadFonts()
 
 createApp(App).use(vuetify).use(router).use(
   createGtm({
-    id: '', // Your GTM single container ID
+    id: 'GTM-NRW8BLC', // Your GTM single container ID
   })
 ).mount('#app')
